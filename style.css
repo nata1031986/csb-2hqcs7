@@ -1,0 +1,109 @@
+:root {
+  --primary-color: #ffc107;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.navigation-links a:hover {
+  color: grey;
+}
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  border: black;
+}
+
+.secondary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+img.featured-img {
+  border-radius: 50%;
+}
+
+#featured-details {
+  max-width: 100%;
+  padding-top: 2px;
+  opacity: 0;
+  margin-right: 8%;
+  -webkit-transition: opacity 250ms linear;
+  transition: opacity 250ms linear;
+  z-index: 2;
+  text-align: center;
+}
+
+#featured-image {
+  position: relative;
+  -webkit-transform: scale(0.85);
+  transform: scale(0.85);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  line-height: 1.2;
+  z-index: 2;
+  transition: opacity 250ms ease-in-out;
+}
+
+#featured-image:hover #featured-details,
+#featured-image:focus #featured-image {
+  opacity: 1;
+  text-shadow: 0 0 2em white;
+}
+
+#featured-image:hover,
+#featured-image:focus {
+  opacity: 0.8;
+}
+
+#featured-details span {
+  text-align: center;
+  display: block;
+  font-weight: 700;
+  font-size: 2rem;
+}
+:root {
+  --featured-artists-background-color: #606470;
+}
+
+#Info {
+  background-color: #7c52e9;
+}
+#launch-button {
+  background-color: white !important;
+  border-color: white !important;
+  color: #000 !important;
+  transition: color 0.2s !important, background-color 0.2s !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#launch-button:hover {
+  background-color: black !important;
+  color: white !important;
+}
